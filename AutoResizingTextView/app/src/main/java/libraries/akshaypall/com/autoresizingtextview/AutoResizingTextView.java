@@ -13,6 +13,14 @@ import java.util.List;
 
 /**
  * Created by Akshay on 2017-05-14.
+ *
+ * Auto sizing TextView that takes in a textsize attribute and uses it as a maximum text size (in
+ * SP) and scales down accordingly.
+ *
+ * Note: Doing a large amount of resizing calls may make the resizing visible to the user!
+ * Ex. Setting a max size of 70sp and incrementing by 1sp at a time will result in the user visibly
+ * seeing the text shrink appropriately.
+ *
  */
 
 public class AutoResizingTextView extends android.support.v7.widget.AppCompatTextView {
